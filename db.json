@@ -1,19 +1,67 @@
 {
-  "posts": [
+  "posts": {
+    "post": [
+      {
+      "title": "tiêu đề", 
+      "content": "nội dung", 
+      "post_img": "Ảnh bài viết", 
+      "createAt": "", 
+      "author": "", 
+      "except": "", 
+      "category": "1"
+    }
+    ]
+  },
+
+  "projects": [
     {
-      "id": 1,
-      "title": "json-server",
-      "author": "typicode"
+      "content":"nội dung",
+      "name": "tên dự án",
+      "gallary": "",
+      "createAt": "",
+      "except": "",
+      "category": "",
+      "pro_img": "",
+      "teams": ""
     }
   ],
-  "comments": [
+
+  "menu": [
     {
-      "id": 1,
-      "body": "some comment",
-      "postId": 1
+      "name": "Home",
+      "path": "/"
+    },
+    {
+      "name": "Post",
+      "path": "/post"
+    },
+    {
+      "name": "Project",
+      "path": "/project"
+    },
+    {
+      "name": "About",
+      "path": "/about"
     }
   ],
-  "profile": {
-    "name": "typicode"
-  }
+
+  "categogory_post": [
+    {
+      "post_img":"Ảnh bài viết",
+      "name": "tên cate"
+    }
+  ],
+
+  "category_pro": [
+    {
+      "pro_img": "Ảnh dự án",
+      "name": "Tên cate"
+    }
+  ],
+
+  "config": [
+    {
+
+    }
+  ]
 }

@@ -1,9 +1,9 @@
 import header from './../components/header';
-const homePage = () => {
+const projectPages = () => {
     return `
         ${header()}
-        <div>Home</div>
+        <div>Projects</div>
     `;
 };
 
-export default homePage;
+export default projectPages;

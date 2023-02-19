@@ -5,9 +5,645 @@
     <link rel="icon" type="image/svg+xml" href="/vite.svg" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Vite App</title>
+    <link rel="stylesheet" href="./src/style.css">
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="./src/pages/demo/show.js"></script>
+    <div class="tw-bg-black tw-h-auto">
+      <div id="app"></div>
+      <script type="module" src="./src/main.js"></script>
+      <div
+        class="tw-container tw-mx-auto tw-flex tw-justify-between tw-items-start md:tw-flex md:tw-flex-row"
+      >
+        <img
+          class="tw-w-7 tw-h-7 md:tw-w-32 md:tw-h-32 md:tw-z-10 md:tw-py-2 tw-object-cover tw-ml-4 tw-my-2"
+          src="./images/Logocuathang.png"
+          alt=""
+        />
+        <ul
+          id="menu"
+          class="tw-w-full tw-h-screen tw-fixed tw-top-0 tw-left-0 tw-bg-green-400 tw-flex tw-flex-col tw-justify-center tw-items-center md:tw-flex md:tw-flex-row md:tw-justify-end md:tw-bg-transparent md:tw-relative md:tw-h-auto tw-hidden"
+        >
+          <li>
+            <a
+              class="hover:tw-underline tw-block tw-p-7 tw-text-white md:tw-p-6 md:tw-block md:tw-text-lg"
+              href="#"
+              >HOME</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:tw-underline tw-block tw-p-7 tw-text-white md:tw-p-6 md:tw-block md:tw-text-lg"
+              href="#"
+              >ABOUT</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:tw-underline tw-block tw-p-7 tw-text-white md:tw-p-6 md:tw-block md:tw-text-lg"
+              href="#"
+              >PORTFOLIO</a
+            >
+          </li>
+          <li>
+            <a
+              class="hover:tw-underline tw-block tw-p-7 tw-text-white md:tw-p-6 md:tw-block md:tw-text-lg"
+              href="#"
+              >CONTACT</a
+            >
+          </li>
+          <li>
+            <button
+              class="tw-bg-gray-700 tw-rounded-xl tw-px-12 tw-py-2 tw-text-white md:tw-bg-green-400"
+            >
+              CV
+            </button>
+          </li>
+        </ul>
+        <div id="menuIcon" class="tw-z-10 md:tw-hidden tw-text-white">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            class="tw-h-7 tw-w-7"
+            fill="none"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+            stroke-width="2"
+          >
+            <path
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              d="M4 6h16M4 12h16M4 18h16"
+            />
+          </svg>
+        </div>
+      </div>
+      <!-- !HEADING -->
+
+      <!-- !Hàng 1 -->
+      <div class="tw-container tw-mx-auto">
+        <div class="md:tw-flex tw-gap-y-16 md:tw-justify-between">
+          <div class="tw-flex tw-flex-row">
+            <div class="tw-flex tw-flex-col tw-ml-4">
+              <span class="tw-text-white"
+                >Hello <i class="fas fa-hand-peace tw-pt-16 tw-text-yellow-300"></i>,
+                I'm</span
+              >
+              <span class="tw-py-2 tw-text-2xl tw-text-white">NGUYEN VAN THANG</span>
+              <span class="tw-text-green-500">Full stack developer</span>
+              <span class="tw-text-white"
+                >I'm a computer technician with a focus on web development with
+                JavaScript.</span
+              >
+              <button
+                class="tw-text-white tw-w-44 tw-py-3 tw-mt-8 tw-bg-green-500 tw-rounded-2xl"
+              >
+                Contact
+              </button>
+            </div>
+          </div>
+          <div class="tw-w-1/2 tw-hidden md:tw-flex">
+            <img
+              src="./316302951_440066151648427_768184348371129883_n.jpg"
+              alt=""
+              class="tw-rounded-2xl"
+              id="slideshow"
+            />
+            <!-- <button onclick="Next()" class="text-white">Next</button>
+        <button onclick="Next1()" class="text-white">Next1</button> -->
+          </div>
+        </div>
+
+        <!-- !Hàng 2 -->
+        <div class="md:tw-container md:tw-grid md:tw-grid-cols-2 md:tw-mx-auto md:tw-mt-12">
+          <div class="tw-ml-4 tw-mt-24 tw-flex tw-flex-col tw-items-center md:tw-items-start">
+            <div class="tw-flex tw-flex-col tw-items-center md:tw-block">
+              <span
+                class="tw-inline-block tw-border tw-border-transparent tw-border-b-blue-500 tw-text-white tw-text-xl md:tw-text-2xl"
+                >About me</span
+              >
+              <p class="tw-text-white tw-mt-4 tw-text-center md:tw-text-left">
+                My name is Nguyen Van Thang, I'm a computer technician with a
+                great passion for programming.
+              </p>
+              <p class="tw-text-white tw-mt-8 tw-text-center md:tw-text-left">
+                Improved my skills as a Front-End and Back-End developer
+              </p>
+              <p class="tw-text-white tw-mt-8 tw-text-center md:tw-text-left">
+                I develop websites and applications using HTML, CSS, and
+                JavaScript.
+              </p>
+              <p class="tw-text-white tw-mt-8 tw-text-center md:tw-text-left">
+                I'm always improving myself with each project I get my hands on.
+              </p>
+              <p class="tw-text-white tw-mt-8 tw-text-center md:tw-text-left">
+                I am a dedicated person who pursues his dreams, hardworking and
+                results oriented, I always seek to achieve my best version.
+              </p>
+              <span class="tw-mt-14 tw-mb-4 tw-text-green-500"
+                >Here are my main skills:</span
+              >
+            </div>
+            <div class="tw-flex tw-flex-row tw-gap-x-6 md:tw-mt-3">
+              <svg
+                width="33"
+                height="29"
+                viewBox="0 0 33 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                xmlns:xlink="http://www.w3.org/1999/xlink"
+              >
+                <rect width="33" height="29" fill="url(#pattern0)" />
+                <defs>
+                  <pattern
+                    id="pattern0"
+                    patternContentUnits="objectBoundingBox"
+                    width="1"
+                    height="1"
+                  >
+                    <use
+                      xlink:href="#image0_2_1081"
+                      transform="translate(0 -0.0689655) scale(0.00666667 0.00758621)"
+                    />
+                  </pattern>
+                  <image
+                    id="image0_2_1081"
+                    width="150"
+                    height="150"
+                    xlink:href="data:image/png;base64,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"
+                  />
+                </defs>
+              </svg>
+              <svg
+                width="34"
+                height="29"
+                viewBox="0 0 34 29"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 0L17 28.9738L34 0H27.2L17 17.3843L6.715 0H0Z"
+                  fill="#41B883"
+                />
+              </svg>
+              <svg
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="tw-bg-orange-500"
+              >
+                <path
+                  d="M18.9994 4.00661H10H4.74063L5.08063 7.85073H10H18.6594L17.6373 19.3767L10 21.5081L9.99363 21.5102L2.36063 19.3767L1.82726 13.3481H5.56726L5.84563 16.4761L9.99576 17.6045L10 17.6024L14.1544 16.474L14.5879 11.6056H10H1.67426L0.667007 0.255981H10H19.3309L18.9994 4.00661Z"
+                  fill="#FAFAFA"
+                />
+              </svg>
+              <svg
+                width="20"
+                height="22"
+                viewBox="0 0 20 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+                class="tw-bg-blue-600"
+              >
+                <path
+                  d="M19.0823 4.00661L18.7401 7.85073L17.7074 19.3746L10 21.506L9.99363 21.5081L2.2905 19.3746L1.75288 13.3481H5.52688L5.80738 16.474L9.99575 17.6045L9.99788 17.6024L14.1926 16.4719L14.7642 11.2635L1.57225 11.2996L1.19825 7.73811L15.0809 7.57448L15.3614 3.76223L0.826376 3.80261L0.582001 0.255981H10H19.418L19.0823 4.00661Z"
+                  fill="#FAFAFA"
+                />
+              </svg>
+            </div>
+          </div>
+          <div class="tw-w-full tw-px-4 tw-mt-12 tw-object-top">
+            <img
+              src="./z3713341829689_a54a891e6c50de69c9f8238987e8bbf0.jpg"
+              alt=""
+              class="tw-w-full tw-object-cover tw-rounded-xl"
+            />
+          </div>
+        </div>
+      </div>
+      <!--! Main Content  -->
+      <div class="tw-flex tw-justify-center tw-mt-16 md:tw-mt-28 tw-mb-6">
+        <span class="tw-text-white tw-text-3xl tw-py-4">My portfolio</span>
+      </div>
+      <!-- *Product ROW 1 -->
+
+      <div
+        class="tw-flex tw-flex-col tw-gap-y-4 md:tw-grid md:tw-grid-cols-3 md:tw-justify-between md:tw-container md:tw-mx-auto md:tw-gap-5 tw-md:tw-mt-28"
+      >
+        <!-- !folder 1 -->
+        <div
+          class="tw-container tw-flex tw-flex-col tw-w-11/12 tw-border tw-border-transparent tw-rounded-xl tw-mx-auto tw-content-between tw-bg-neutral-800 md:tw-content-between"
+        >
+          <div class="tw-flex tw-justify-between tw-p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-6 tw-w-6 tw-text-green-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-flex tw-flex-col tw-px-4">
+            <span class="tw-text-white tw-text-lg">FCalendar</span>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma aplicação Web realizada durante o Hackathon do programa de
+              formação da
+            </p>
+            <span class="tw-text-white tw-text-lg tw-underline tw-decoration-green-500"
+              >FCamara</span
+            >
+          </div>
+          <div class="tw-flex tw-justify-between tw-px-4 tw-mt-5 tw-pb-5">
+            <span class="tw-text-white tw-text-lg">Node</span>
+            <span class="tw-text-white tw-text-lg">Express</span>
+            <span class="tw-text-white tw-text-lg">MySql</span>
+            <span class="tw-text-white tw-text-lg">Ejs</span>
+          </div>
+        </div>
+        <!-- !folder 2 -->
+        <div
+          class="tw-flex tw-flex-col tw-w-11/12 tw-border tw-border-transparent tw-rounded-xl tw-mx-auto tw-content-between tw-bg-neutral-800"
+        >
+          <div class="tw-flex tw-justify-between tw-p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-6 tw-w-6 tw-text-green-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-flex tw-flex-col tw-px-4">
+            <span class="tw-text-white tw-text-lg">Github Searcher</span>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma versão mais agradável para ver seu perfil do GitHub, inclui
+              visualização de dados , repositórios, compartilhamento entre
+              outros.
+            </p>
+            <!-- <span class=" text-white text-lg underline decoration-green-500">FCamara</span> -->
+          </div>
+          <div class="tw-flex tw-justify-between tw-px-4 tw-mt-5 tw-pb-5">
+            <span class="tw-text-white tw-text-lg">React</span>
+            <span class="tw-text-white tw-text-lg">Typescript</span>
+            <span class="tw-text-white tw-text-lg">Styled</span>
+            <span class="tw-text-white tw-text-lg">Components</span>
+          </div>
+        </div>
+        <!-- !folder 3 -->
+        <div
+          class="tw-flex tw-flex-col tw-w-11/12 tw-border tw-border-transparent tw-rounded-xl tw-mx-auto tw-content-between tw-bg-neutral-800"
+        >
+          <div class="tw-flex tw-justify-between tw-p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-6 tw-w-6 tw-text-green-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-flex tw-flex-col tw-px-4">
+            <span class="tw-text-white tw-text-lg">Sunnyside agency</span>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma lading page de uma empresa fictícia proposta pelo
+            </p>
+            <span class="tw-text-white tw-text-lg tw-underline tw-decoration-green-500"
+              >Frontend Mentor.</span
+            >
+          </div>
+          <div class="tw-flex tw-justify-between tw-px-4 tw-mt-5 tw-pb-5">
+            <span class="tw-text-white tw-text-lg">Html</span>
+            <span class="tw-text-white tw-text-lg">Css</span>
+            <span class="tw-text-white tw-text-lg">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <!-- *Product ROW 2 -->
+      <div
+        class="tw-flex tw-flex-col tw-gap-y-4 md:tw-flex-row md:tw-justify-between md:tw-container md:tw-mx-auto md:tw-gap-x-5 md:tw-mt-5 tw-mt-5"
+      >
+        <!-- !folder 1 -->
+        <div
+          class="tw-flex tw-flex-col tw-w-11/12 tw-border tw-border-transparent tw-rounded-xl tw-mx-auto tw-content-between tw-bg-neutral-800 md:tw-content-between"
+        >
+          <div class="tw-flex tw-justify-between tw-p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-6 tw-w-6 tw-text-green-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-flex tw-flex-col tw-px-4">
+            <span class="tw-text-white tw-text-lg">Portfólio V1</span>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma versão alternativa de meu portfólio, utilizando VueJs.
+            </p>
+            <!-- <span class=" text-white text-lg underline decoration-green-500">FCamara</span> -->
+          </div>
+          <div class="tw-flex tw-justify-between tw-px-4 tw-mt-5 tw-pb-5">
+            <span class="tw-text-white tw-text-lg">VueJs</span>
+            <span class="tw-text-white tw-text-lg">JavaScript</span>
+            <!-- <span class="text-white text-lg">MySql</span>
+        <span class="text-white text-lg">Ejs</span> -->
+          </div>
+        </div>
+        <!-- !folder 2 -->
+        <div
+          class="tw-flex tw-flex-col tw-w-11/12 tw-border tw-border-transparent tw-rounded-xl tw-mx-auto tw-content-between tw-bg-neutral-800"
+        >
+          <div class="tw-flex tw-justify-between tw-p-4 tw-content-between">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-6 tw-w-6 tw-text-green-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-flex tw-flex-col tw-px-4">
+            <span class="tw-text-white tw-text-lg">Dtmoney</span>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Um gerenciador de finanças para analisar seus ganhos, gastos e ter
+              um controle maior de suas finanças.
+            </p>
+            <!-- <span class=" text-white text-lg underline decoration-green-500">FCamara</span> -->
+          </div>
+          <div class="tw-flex tw-justify-between tw-px-4 tw-mt-5 tw-pb-5">
+            <span class="tw-text-white tw-text-lg">VueJs</span>
+            <span class="tw-text-white tw-text-lg">JavaScript</span>
+            <!-- <span class="text-white text-lg">Styled</span>
+        <span class="text-white text-lg">Components</span> -->
+          </div>
+        </div>
+        <!-- !folder 3 -->
+        <div
+          class="tw-flex tw-flex-col tw-w-11/12 border tw-border-transparent tw-rounded-xl tw-mx-auto tw-content-between tw-bg-neutral-800"
+        >
+          <div class="tw-flex tw-justify-between tw-p-4">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-6 tw-w-6 tw-text-green-500"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 7v10a2 2 0 002 2h14a2 2 0 002-2V9a2 2 0 00-2-2h-6l-2-2H5a2 2 0 00-2 2z"
+              />
+            </svg>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-flex tw-flex-col tw-px-4">
+            <span class="tw-text-white tw-text-lg">Music Library</span>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma interface para uma biblioteca de músicas, semelhante ao
+              Spotify.
+            </p>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma interface para uma biblioteca de músicas, semelhante ao
+              Spotify.
+            </p>
+            <p class="tw-text-white tw-mt-5 tw-text-lg">
+              Uma interface para uma biblioteca de músicas, semelhante ao
+              Spotify.
+            </p>
+            <!-- <span class=" text-white text-lg underline decoration-green-500">Frontend Mentor.</span> -->
+          </div>
+          <div class="tw-flex tw-justify-between tw-px-4 tw-mt-5 tw-pb-5">
+            <span class="tw-text-white tw-text-lg">Html</span>
+            <span class="tw-text-white tw-text-lg">Css</span>
+            <span class="tw-text-white tw-text-lg">JavaScript</span>
+          </div>
+        </div>
+      </div>
+      <div class="tw-mt-12">
+        <span class="tw-text-white tw-text-3xl tw-block tw-text-center">Contact me</span>
+        <p class="tw-block tw-text-center tw-mt-8 tw-text-green-500 tw-text-xl tw-px-6">
+          If you've seen my potential or want to talk to me, don't hesitate to
+          send me a message.
+        </p>
+      </div>
+      <!--TODO Form -->
+      <div
+        class="md:tw-w-7/12 md:tw-flex md:tw-flex-row md:tw-justify-evenly md:tw-mx-auto md:tw-mt-5"
+      >
+        <div
+          class="tw-border tw-border-transparent tw-bg-green-500 tw-w-11/12 tw-h-32 tw-rounded-xl tw-flex tw-mx-auto tw-justify-center tw-items-center tw-mt-12 tw-flex-col md:tw-flex md:tw-flex-row md:tw-w-72 md:tw-h-16 md:tw-m-0"
+        >
+          <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              className="tw-h-6 tw-w-6"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              strokeWidth="{2}"
+              class="tw-text-black tw-w-16 tw-mx-auto md:tw-w-8"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+              />
+            </svg>
+            <span class="tw-text-lg">Thangnvph20126@fpt.edu.vn</span>
+          </div>
+        </div>
+        <div
+          class="tw-border tw-border-transparent tw-bg-green-500 tw-w-11/12 tw-h-32 tw-rounded-xl tw-flex tw-mx-auto tw-justify-center tw-items-center tw-mt-5 tw-flex-col md:tw-flex md:tw-flex-row md:tw-w-72 md:tw-h-16 md:tw-m-0"
+        >
+          <div class="tw-flex tw-flex-col md:tw-flex-row md:tw-items-center">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-w-12 tw-mx-auto md:tw-w-8"
+              fill="none"
+              viewBox="0 0 24 24"
+              stroke="currentColor"
+              stroke-width="2"
+            >
+              <path
+                stroke-linecap="round"
+                stroke-linejoin="round"
+                d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+              />
+            </svg>
+            <span class="tw-text-lg tw-mt-4 md:tw-mt-0">(+84) 35627-9041</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="tw-mt-20 tw-px-4">
+        <span class="tw-text-white tw-text-3xl tw-block tw-text-center"
+          >Get in touch using the form below</span
+        >
+      </div>
+      <div class="md:tw-container md:tw-mx-auto tw-mt-12 md:tw-flex">
+        <form action="" class="md:tw-inline-flex md:tw-flex-col md:tw-mx-auto">
+          <div class="tw-flex tw-flex-col tw-items-center">
+            <input
+              type="text"
+              placeholder="search..."
+              class="tw-w-11/12 tw-border tw-border-white tw-rounded-xl tw-bg-black tw-h-10 tw-text-white md:tw-w-96"
+            />
+            <textarea
+              name=""
+              id=""
+              cols="30"
+              rows="10"
+              class="tw-w-11/12 tw-mt-4 tw-rounded-xl tw-bg-black tw-border tw-border-white tw-text-white tw-p-2 md:tw-w-96"
+            >
+Leave your message</textarea
+            >
+            <div class="tw-mt-12 md:tw-mx-auto">
+              <button class="tw-bg-green-500 tw-py-2 tw-px-14 tw-rounded-xl">
+                TO SEND
+              </button>
+            </div>
+          </div>
+        </form>
+      </div>
+      <div class="tw-flex tw-flex-col tw-mt-5">
+        <div
+          class="tw-mt-16 tw-w-full tw-bg-neutral-800 tw-flex tw-flex-col tw-justify-center md:tw-h-16 md:tw-flex md:tw-flex-row md:tw-justify-evenly md:tw-items-center"
+        >
+          <span class="tw-text-3xl tw-text-white tw-py-8 tw-text-center md:tw-p-0"
+            >I'm Thang</span
+          >
+          <div class="tw-flex tw-justify-evenly tw-px-10 md:tw-items-center">
+            <span class="tw-text-white md:tw-text-xl">This site was made with a</span>
+            <span class="tw-text-white md:tw-text-xl md:ml-4">lot of</span>
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              class="tw-h-5 tw-w-5 tw-text-red-500 tw-hidden md:tw-block md:tw-ml-4"
+              viewBox="0 0 20 20"
+              fill="currentColor"
+            >
+              <path
+                fill-rule="evenodd"
+                d="M3.172 5.172a4 4 0 015.656 0L10 6.343l1.172-1.171a4 4 0 115.656 5.656L10 17.657l-6.828-6.829a4 4 0 010-5.656z"
+                clip-rule="evenodd"
+              />
+            </svg>
+          </div>
+          <div class="tw-mt-4 tw-py-2 tw-flex tw-gap-x-6 tw-justify-center md:tw-m-0 md:tw-p-0">
+            <i class="fab fa-linkedin tw-text-white tw-text-2xl"></i>
+            <i class="fab fa-github tw-text-white tw-text-2xl"></i>
+            <i class="fab fa-discord tw-text-white tw-text-2xl"></i>
+            <i class="fas fa-code tw-text-white tw-text-2xl"></i>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
